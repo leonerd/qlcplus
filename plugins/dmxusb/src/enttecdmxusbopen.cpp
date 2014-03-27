@@ -104,7 +104,7 @@ QString EnttecDMXUSBOpen::additionalInfo() const
                                          .arg(vendor());
 	info += QString("<BR>");
 	info += QString("<B>%1:</B> %2").arg(tr("DMX CHANNELS"))
-                                      .arg(m_universe.size());
+                                      .arg(m_universe.size()-1);
     info += QString("<BR>");
     info += QString("<B>%1:</B> %2Hz").arg(tr("DMX Frame Frequency"))
                                       .arg(m_frequency);
